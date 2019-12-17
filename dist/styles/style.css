@@ -1,0 +1,56 @@
+section {
+  height: 100%;
+  width: calc(100vw - 20vw * 2);
+  height: calc(100vh - 10vh * 2);
+  padding: 10vh 20vw; }
+  section.black {
+    background-color: rgba(0, 0, 0, 0.9); }
+  section.presentation {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: row;
+        flex-direction: row;
+    -ms-flex-align: stretch;
+        align-items: stretch;
+    -ms-flex-pack: justify;
+        justify-content: space-between; }
+    section.presentation .face {
+      margin-right: 30px;
+      height: 100%;
+      background: url("/images/face.jpg");
+      background-size: cover;
+      background-position: center;
+      -ms-flex: 1;
+          flex: 1; }
+    section.presentation .infos {
+      -ms-flex: 1;
+          flex: 1;
+      margin-left: 30px;
+      display: -ms-flexbox;
+      display: flex;
+      -ms-flex-direction: column;
+          flex-direction: column;
+      -ms-flex-pack: justify;
+          justify-content: space-between; }
+      section.presentation .infos h1 {
+        color: #fff;
+        font-size: 8em; }
+      section.presentation .infos p {
+        color: rgba(255, 255, 255, 0.7);
+        font-family: 'Lora';
+        line-height: 1.2em; }
+      section.presentation .infos ul.social {
+        display: -ms-flexbox;
+        display: flex;
+        width: 20%;
+        -ms-flex-direction: row;
+            flex-direction: row;
+        -ms-flex-align: start;
+            align-items: flex-start;
+        -ms-flex-pack: justify;
+            justify-content: space-between; }
+        section.presentation .infos ul.social li a {
+          color: #fff; }
+
+h1 {
+  font-family: 'Bebas Neue'; }
