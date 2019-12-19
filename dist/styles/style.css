@@ -1,10 +1,12 @@
 section {
-  height: 100%;
+  height: 0;
   width: calc(100vw - 20vw * 2);
-  height: calc(100vh - 15vh * 2);
+  min-height: calc(100vh - 15vh * 2);
   padding: 15vh 20vw; }
   section.black {
     background-color: rgba(0, 0, 0, 0.9); }
+  section.white {
+    background-color: white; }
   section.presentation {
     display: -ms-flexbox;
     display: flex;
@@ -76,4 +78,42 @@ header {
     font-size: 1.3em;
     cursor: pointer; }
   header nav {
-    display: none; }
+    display: none;
+    height: calc(100vh - 15vh * 2);
+    width: calc(100vw - 20vw * 2);
+    padding: 15vh 20vw;
+    position: fixed;
+    background: #fff;
+    top: 0;
+    left: 0;
+    -ms-flex-direction: column;
+        flex-direction: column;
+    -ms-flex-pack: distribute;
+        justify-content: space-around; }
+    header nav a {
+      color: #000;
+      transition: 0.2s;
+      height: calc(5em + 2vw * 2); }
+      header nav a h1 {
+        position: absolute;
+        padding: 2vw;
+        font-size: 5em;
+        z-index: 999;
+        transition: .5s; }
+        header nav a h1:first-of-type {
+          color: #000;
+          background: none; }
+        header nav a h1:last-of-type {
+          color: #fff;
+          background: #000;
+          width: 0;
+          overflow: hidden;
+          transition: .2s; }
+      header nav a:hover {
+        color: #fff; }
+        header nav a:hover h1:last-of-type {
+          width: 60%; }
+
+#menu:target {
+  display: -ms-flexbox;
+  display: flex; }
