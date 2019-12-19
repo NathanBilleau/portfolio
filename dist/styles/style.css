@@ -55,7 +55,7 @@ section {
 h1 {
   font-family: 'Bebas Neue'; }
 
-nav {
+header {
   position: absolute;
   width: calc(100vw - 20vw * 2);
   height: 10vh;
@@ -68,8 +68,12 @@ nav {
       justify-content: flex-start;
   -ms-flex-align: center;
       align-items: center; }
-  nav span {
+  header a {
+    text-decoration: none; }
+  header span {
     font-family: 'Bebas Neue';
     color: #fff;
     font-size: 1.3em;
     cursor: pointer; }
+  header nav {
+    display: none; }
