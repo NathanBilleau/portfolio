@@ -7,7 +7,7 @@ section {
     background-color: rgba(0, 0, 0, 0.9); }
   section.white {
     background-color: white; }
-  section.presentation {
+  section.half {
     display: -ms-flexbox;
     display: flex;
     -ms-flex-direction: row;
@@ -16,15 +16,20 @@ section {
         align-items: stretch;
     -ms-flex-pack: justify;
         justify-content: space-between; }
-    section.presentation .face {
+    section.half .imgBg {
       margin-right: 30px;
       height: 100%;
-      background: url("/images/face.jpg");
       background-size: cover;
       background-position: center;
+      background-repeat: no-repeat;
       -ms-flex: 1;
-          flex: 1; }
-    section.presentation .infos {
+          flex: 1;
+      position: relative; }
+      section.half .imgBg.face {
+        background-image: url("/images/face.jpg"); }
+      section.half .imgBg.skills {
+        background-image: url("/images/skills.jpg"); }
+    section.half .infos {
       -ms-flex: 1;
           flex: 1;
       margin-left: 30px;
@@ -32,16 +37,16 @@ section {
       display: flex;
       -ms-flex-direction: column;
           flex-direction: column;
-      -ms-flex-pack: justify;
-          justify-content: space-between; }
-      section.presentation .infos h1 {
+      -ms-flex-pack: distribute;
+          justify-content: space-around; }
+      section.half .infos h1 {
         color: #fff;
         font-size: 8em; }
-      section.presentation .infos p {
+      section.half .infos p {
         color: rgba(255, 255, 255, 0.7);
         font-family: 'Lora';
         line-height: 1.2em; }
-      section.presentation .infos ul.social {
+      section.half .infos ul.social {
         display: -ms-flexbox;
         display: flex;
         width: 20%;
@@ -51,7 +56,7 @@ section {
             align-items: flex-start;
         -ms-flex-pack: justify;
             justify-content: space-between; }
-        section.presentation .infos ul.social li a {
+        section.half .infos ul.social li a {
           color: #fff; }
 
 h1 {
@@ -69,7 +74,8 @@ header {
   -ms-flex-pack: start;
       justify-content: flex-start;
   -ms-flex-align: center;
-      align-items: center; }
+      align-items: center;
+  z-index: 999; }
   header a {
     text-decoration: none; }
   header span {
@@ -92,28 +98,65 @@ header {
         justify-content: space-around; }
     header nav a {
       color: #000;
-      transition: 0.2s;
-      height: calc(5em + 2vw * 2); }
+      transition: 0.5s;
+      box-shadow: inset 0 0 0 0 #000; }
       header nav a h1 {
-        position: absolute;
         padding: 2vw;
-        font-size: 5em;
-        z-index: 999;
-        transition: .5s; }
-        header nav a h1:first-of-type {
-          color: #000;
-          background: none; }
-        header nav a h1:last-of-type {
-          color: #fff;
-          background: #000;
-          width: 0;
-          overflow: hidden;
-          transition: .2s; }
+        font-size: 6em; }
       header nav a:hover {
-        color: #fff; }
-        header nav a:hover h1:last-of-type {
-          width: 60%; }
+        color: #fff;
+        box-shadow: inset 50vw 0 0 0 #000; }
 
 #menu:target {
   display: -ms-flexbox;
   display: flex; }
+
+.maskedText {
+  font-family: 'Bebas Neue';
+  position: absolute;
+  top: 0;
+  color: #000;
+  background: #fff;
+  mix-blend-mode: screen;
+  padding: 10px;
+  font-size: 5em;
+  margin: 1vw; }
+
+.skill {
+  font-family: 'Bebas Neue';
+  font-size: 2.5em !important;
+  position: absolute;
+  margin: 0;
+  color: #fff;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: #000;
+  padding: 0; }
+  .skill:before {
+    content: attr(data-text);
+    position: absolute;
+    width: 0;
+    overflow: hidden;
+    transition: 0.2s;
+    z-index: 999;
+    color: #000;
+    white-space: nowrap; }
+  .skill.percent1:hover:before {
+    width: 10%; }
+  .skill.percent2:hover:before {
+    width: 20%; }
+  .skill.percent3:hover:before {
+    width: 30%; }
+  .skill.percent4:hover:before {
+    width: 40%; }
+  .skill.percent5:hover:before {
+    width: 50%; }
+  .skill.percent6:hover:before {
+    width: 60%; }
+  .skill.percent7:hover:before {
+    width: 70%; }
+  .skill.percent8:hover:before {
+    width: 80%; }
+  .skill.percent9:hover:before {
+    width: 90%; }
+  .skill.percent10:hover:before {
+    width: 100%; }
