@@ -1,0 +1,25 @@
+html
+  head
+    title Nathan Billeau | Portfolio
+    link(href="https://fonts.googleapis.com/css?family=Bebas+Neue&display=swap", rel="stylesheet")
+    link(href="https://fonts.googleapis.com/css?family=Lora&display=swap", rel="stylesheet")
+    link(href="styles/reset.css", rel="stylesheet")
+    link(href="styles/style.css", rel="stylesheet")
+    link(href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css", rel="stylesheet")
+  body
+
+    include includes/header.pug
+    
+    //- svg.svg
+    //-   clipPath#my-clip-path
+    //-     path(d="M52.5,7.5c0,0-24,1-24,26s-3,28-8,36s8,30,34,20s28-34,25-40s-10-17-10-29S57.5,6.5,52.5,7.5z")
+          
+    section.rea.color1
+      .overview
+        img(src="images/lemaquis.png")
+        h1.maskedText Le maquis
+      .more
+        
+        a(href="https://lemaquis.netlify.com" target="_blank") visiter le site
+        
+      

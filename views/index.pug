@@ -7,22 +7,8 @@ html
     link(href="styles/style.css", rel="stylesheet")
     link(href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css", rel="stylesheet")
   body
-    header
-      a(href="#menu")
-        span Menu
-        
-      nav#menu
-        a(href="/")
-          h1 Présentation
-      
-        a(href="/realisations.html")
-          h1 Réalisations
-        
-        a(href="/contact.html")
-          h1 Contact
-      
-      
-      
+  
+    include includes/header.pug
       
     section.black.half
       div.imgBg.face

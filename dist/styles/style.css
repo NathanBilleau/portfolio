@@ -1,64 +1,69 @@
 @charset "UTF-8";
-section {
+section.black {
   height: 0;
   width: calc(100vw - 20vw * 2);
   min-height: calc(100vh - 15vh * 2);
-  padding: 15vh 20vw; }
-  section.black {
-    background-color: rgba(0, 0, 0, 0.9); }
-  section.white {
-    background-color: white; }
-  section.half {
+  padding: 15vh 20vw;
+  background-color: rgba(0, 0, 0, 0.9); }
+
+section.white {
+  height: 0;
+  width: calc(100vw - 20vw * 2);
+  min-height: calc(100vh - 15vh * 2);
+  padding: 15vh 20vw;
+  background-color: white; }
+
+section.half {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: row;
+      flex-direction: row;
+  -ms-flex-align: stretch;
+      align-items: stretch;
+  -ms-flex-pack: justify;
+      justify-content: space-between; }
+  section.half .imgBg {
+    margin-right: 30px;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    -ms-flex: 1;
+        flex: 1;
+    position: relative; }
+    section.half .imgBg.face {
+      background-image: url("/images/face.jpg"); }
+    section.half .imgBg.skills {
+      background-image: url("/images/skills.jpg"); }
+  section.half .infos {
+    -ms-flex: 1;
+        flex: 1;
+    margin-left: 30px;
     display: -ms-flexbox;
     display: flex;
-    -ms-flex-direction: row;
-        flex-direction: row;
-    -ms-flex-align: stretch;
-        align-items: stretch;
-    -ms-flex-pack: justify;
-        justify-content: space-between; }
-    section.half .imgBg {
-      margin-right: 30px;
-      height: 100%;
-      background-size: cover;
-      background-position: center;
-      background-repeat: no-repeat;
-      -ms-flex: 1;
-          flex: 1;
-      position: relative; }
-      section.half .imgBg.face {
-        background-image: url("/images/face.jpg"); }
-      section.half .imgBg.skills {
-        background-image: url("/images/skills.jpg"); }
-    section.half .infos {
-      -ms-flex: 1;
-          flex: 1;
-      margin-left: 30px;
+    -ms-flex-direction: column;
+        flex-direction: column;
+    -ms-flex-pack: distribute;
+        justify-content: space-around; }
+    section.half .infos h1 {
+      color: #fff;
+      font-size: 8em; }
+    section.half .infos p {
+      color: rgba(255, 255, 255, 0.7);
+      font-family: 'Lora';
+      line-height: 1.2em; }
+    section.half .infos ul.social {
       display: -ms-flexbox;
       display: flex;
-      -ms-flex-direction: column;
-          flex-direction: column;
-      -ms-flex-pack: distribute;
-          justify-content: space-around; }
-      section.half .infos h1 {
-        color: #fff;
-        font-size: 8em; }
-      section.half .infos p {
-        color: rgba(255, 255, 255, 0.7);
-        font-family: 'Lora';
-        line-height: 1.2em; }
-      section.half .infos ul.social {
-        display: -ms-flexbox;
-        display: flex;
-        width: 20%;
-        -ms-flex-direction: row;
-            flex-direction: row;
-        -ms-flex-align: start;
-            align-items: flex-start;
-        -ms-flex-pack: justify;
-            justify-content: space-between; }
-        section.half .infos ul.social li a {
-          color: #fff; }
+      width: 20%;
+      -ms-flex-direction: row;
+          flex-direction: row;
+      -ms-flex-align: start;
+          align-items: flex-start;
+      -ms-flex-pack: justify;
+          justify-content: space-between; }
+      section.half .infos ul.social li a {
+        color: #fff; }
 
 h1 {
   font-family: 'Bebas Neue'; }
@@ -175,3 +180,49 @@ header {
     content: ' je serais '; }
   .portraitCh div h1:first-of-type:before {
     content: ' si j\'étais '; }
+
+.rea.color1 .overview {
+  background: #FCE2AE; }
+
+.rea.color1 .more a {
+  background: #FCE2AE; }
+
+.rea .overview {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: center;
+      justify-content: center;
+  -ms-flex-align: center;
+      align-items: center;
+  height: 100%; }
+  .rea .overview img:hover {
+    transform: translate(-10px, 20px); }
+  .rea .overview img:hover + h1 {
+    transform: translate(10px, -20px); }
+  .rea .overview img {
+    height: 50vh;
+    transition: .5s; }
+  .rea .overview h1 {
+    bottom: 15vh;
+    width: 30vw;
+    text-align: center;
+    color: rgba(0, 0, 0, 0.8);
+    top: auto;
+    left: 40vw;
+    position: absolute;
+    transition: .2s; }
+
+.rea .more {
+  position: relative;
+  background: #fff;
+  width: calc(100vw - 20vw * 2);
+  padding: 15vh 20vw; }
+  .rea .more a {
+    padding: 20vh 0;
+    color: #fff;
+    font-family: 'Bebas Neue';
+    width: 100% !important;
+    font-size: 4em;
+    text-decoration: none;
+    display: block;
+    text-align: center; }
