@@ -121,7 +121,7 @@ header {
         font-size: 6em;
       }
 
-      &:hover {
+      &:hover{
         color: #fff;
         box-shadow: inset 50vw 0 0 0 #000;
       }
@@ -178,4 +178,30 @@ header {
       }
   }
 
+}
+
+
+.portraitCh {
+  div {
+    text-align: center;
+    font-size: 4em;
+    color: #fff;
+
+    h1 {
+      display: inline-block;
+    }
+
+    h1:before {
+      color: rgba(255, 255, 255, .3);
+      font-size: .4em;
+    }
+
+    h1:last-of-type:before {
+      content: ' je serais ';
+    }
+
+    h1:first-of-type:before {
+      content: ' si j\'étais ';
+    }
+  }
 }

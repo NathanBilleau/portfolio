@@ -1,3 +1,4 @@
+@charset "UTF-8";
 section {
   height: 0;
   width: calc(100vw - 20vw * 2);
@@ -160,3 +161,17 @@ header {
     width: 90%; }
   .skill.percent10:hover:before {
     width: 100%; }
+
+.portraitCh div {
+  text-align: center;
+  font-size: 4em;
+  color: #fff; }
+  .portraitCh div h1 {
+    display: inline-block; }
+  .portraitCh div h1:before {
+    color: rgba(255, 255, 255, 0.3);
+    font-size: .4em; }
+  .portraitCh div h1:last-of-type:before {
+    content: ' je serais '; }
+  .portraitCh div h1:first-of-type:before {
+    content: ' si j\'étais '; }
