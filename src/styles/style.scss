@@ -332,8 +332,15 @@ header {
       }
     }
 
+    img:active {
+      transform: scale(1.2);
+      z-index: 999999;
+      opacity: 1;
+    }
+
     img {
       height: 50vh;
+      cursor: pointer;
       transition: .5s;
       opacity: 0.6;
       box-shadow: 0 50px 100px rgba(0, 0, 0, 0.5);
