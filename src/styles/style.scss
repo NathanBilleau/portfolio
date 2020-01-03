@@ -218,12 +218,12 @@ header {
   position: fixed;
   width: calc(100vw - 25vw * 2);
   height: 10vh;
-  padding: 0 25vw;
+  margin: 0 25vw;
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  z-index: 999;
+  z-index: 9999;
 
   a {
     display: block;
@@ -283,6 +283,19 @@ header {
   }
 
 
+  &.color4 {
+    .overview {
+      background: #ffd369;
+    }
+
+    .moreContainer {
+      a {
+        background: #ffd369;
+      }
+    }
+  }
+
+
 
   .overview {
     display: flex;
@@ -293,17 +306,19 @@ header {
 
     img:hover {
       & {
-        transform: translate(-10px, -20px);
+        transform: translate(-10px, -20px) scale(0.95);
+        box-shadow: 0 28.5px 95px rgba(0, 0, 0, 0.95);
       }
       &+h1 {
-        transform: translate(10px, 20px);
-
+        transform: translate(10px, 20px) scale(1.1);
       }
     }
 
     img {
       height: 50vh;
       transition: .5s;
+      opacity: 0.6;
+      box-shadow: 0 50px 100px rgba(0, 0, 0, 0.5);
     }
 
     h1 {
@@ -374,6 +389,12 @@ header {
       text-decoration: none;
       display: block;
       text-align: center;
+      transition: .2s;
+      opacity: 0.8;
+
+      &:hover {
+        opacity: 1;
+      }
     }
   }
 }

@@ -189,7 +189,7 @@ header {
   position: fixed;
   width: calc(100vw - 25vw * 2);
   height: 10vh;
-  padding: 0 25vw;
+  margin: 0 25vw;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-direction: row;
@@ -198,7 +198,7 @@ header {
       justify-content: center;
   -ms-flex-align: center;
       align-items: center;
-  z-index: 999; }
+  z-index: 9999; }
   .reaNav a {
     display: block;
     height: 2px;
@@ -226,6 +226,10 @@ header {
     background: #ff896b; }
   .rea.color3 .moreContainer a {
     background: #ff896b; }
+  .rea.color4 .overview {
+    background: #ffd369; }
+  .rea.color4 .moreContainer a {
+    background: #ffd369; }
   .rea .overview {
     display: -ms-flexbox;
     display: flex;
@@ -236,12 +240,15 @@ header {
     height: 100vh;
     position: relative; }
     .rea .overview img:hover {
-      transform: translate(-10px, -20px); }
+      transform: translate(-10px, -20px) scale(0.95);
+      box-shadow: 0 28.5px 95px rgba(0, 0, 0, 0.95); }
     .rea .overview img:hover + h1 {
-      transform: translate(10px, 20px); }
+      transform: translate(10px, 20px) scale(1.1); }
     .rea .overview img {
       height: 50vh;
-      transition: .5s; }
+      transition: .5s;
+      opacity: 0.6;
+      box-shadow: 0 50px 100px rgba(0, 0, 0, 0.5); }
     .rea .overview h1 {
       bottom: 15vh;
       width: 30vw;
@@ -291,4 +298,8 @@ header {
       font-size: 4em;
       text-decoration: none;
       display: block;
-      text-align: center; }
+      text-align: center;
+      transition: .2s;
+      opacity: 0.8; }
+      .rea .moreContainer a:hover {
+        opacity: 1; }
