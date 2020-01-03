@@ -3,6 +3,9 @@ body {
   width: 100vw;
   overflow-x: hidden; }
 
+html {
+  scroll-behavior: smooth; }
+
 section.black {
   height: 0;
   width: calc(100vw - 20vw * 2);
@@ -187,9 +190,9 @@ header {
 
 .reaNav {
   position: fixed;
-  width: calc(100vw - 25vw * 2);
+  width: calc(100vw - 30vw * 2);
   height: 10vh;
-  margin: 0 25vw;
+  margin: 0 30vw;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-direction: row;
@@ -201,19 +204,33 @@ header {
   z-index: 9999; }
   .reaNav a {
     display: block;
-    height: 2px;
-    width: 100px;
-    background: rgba(0, 0, 0, 0.5);
-    margin: 0 10px; }
+    height: 0;
+    -ms-flex: 1;
+        flex: 1;
+    background: rgba(0, 0, 0, 0.4);
+    margin: 0 10px;
+    transition: .2s;
+    overflow: hidden;
+    text-align: center;
+    font-family: 'Bebas Neue';
+    text-decoration: none;
+    padding: 3px 0 0;
+    color: rgba(0, 0, 0, 0); }
+    .reaNav a:hover {
+      background: rgba(0, 0, 0, 0.6);
+      height: 1em;
+      color: #fff; }
 
 .reaContainer {
-  width: 200vw;
+  width: 300vw;
   display: -ms-inline-flexbox;
   display: inline-flex;
   position: relative; }
 
 .rea {
-  width: 100vw; }
+  width: 100vw;
+  scroll-snap-align: start;
+  scroll-snap-stop: normal; }
   .rea.color1 .overview {
     background: #FCE2AE; }
   .rea.color1 .moreContainer a {
@@ -237,7 +254,7 @@ header {
         justify-content: center;
     -ms-flex-align: center;
         align-items: center;
-    height: 100vh;
+    height: 95vh;
     position: relative; }
     .rea .overview img:hover {
       transform: translate(-10px, -20px) scale(0.95);

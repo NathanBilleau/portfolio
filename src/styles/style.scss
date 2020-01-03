@@ -3,6 +3,10 @@ body {
   overflow-x: hidden;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 section {
 
   &.black {
@@ -216,9 +220,9 @@ header {
 
 .reaNav {
   position: fixed;
-  width: calc(100vw - 25vw * 2);
+  width: calc(100vw - 30vw * 2);
   height: 10vh;
-  margin: 0 25vw;
+  margin: 0 30vw;
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -227,22 +231,37 @@ header {
 
   a {
     display: block;
-    height: 2px;
-    width: 100px;
-    background: rgba(0, 0, 0, .5);
+    height: 0;
+    flex:1;
+    background: rgba(0, 0, 0, .4);
     margin: 0 10px;
+    transition: .2s;
+    overflow: hidden;
+    text-align: center;
+    font-family: 'Bebas Neue';
+    text-decoration: none;
+    padding: 3px 0 0;
+    color: rgba(0, 0, 0, 0);
+
+    &:hover {
+      background: rgba(0, 0, 0, .6);
+      height: 1em;
+      color: #fff;
+    }
   }
 
 }
 
 .reaContainer {
-  width: 200vw;
+  width: 300vw;
   display: inline-flex;
   position: relative;
 }
 
 .rea {
   width: 100vw;
+  scroll-snap-align: start;
+  scroll-snap-stop: normal;
 
   &.color1 {
     .overview {
@@ -301,7 +320,7 @@ header {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
+    height: 95vh;
     position: relative;
 
     img:hover {
