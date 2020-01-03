@@ -233,7 +233,7 @@ header {
     display: block;
     height: 0;
     flex:1;
-    background: rgba(0, 0, 0, .4);
+    background: rgba(0, 0, 0, .3);
     margin: 0 10px;
     transition: .2s;
     overflow: hidden;
@@ -263,12 +263,12 @@ header {
 
   &.color1 {
     .overview {
-      background: #c2b0c9;
+      background: #b6ffea;
     }
 
     .moreContainer {
       a {
-        background: #c2b0c9;
+        background: #b6ffea;
       }
     }
   }
@@ -276,12 +276,12 @@ header {
 
   &.color2 {
     .overview {
-      background: #758184;
+      background: #fce2ae;
     }
 
     .moreContainer {
       a {
-        background: #758184;
+        background: #fce2ae;
       }
     }
   }
@@ -289,12 +289,25 @@ header {
 
   &.color3 {
     .overview {
-      background: #ff896b;
+      background: #ffb3b3;
     }
 
     .moreContainer {
       a {
-        background: #ff896b;
+        background: #ffb3b3;
+      }
+    }
+  }
+
+
+  &.color4 {
+    .overview {
+      background: #ffdcf7;
+    }
+
+    .moreContainer {
+      a {
+        background: #ffdcf7;
       }
     }
   }

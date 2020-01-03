@@ -207,7 +207,7 @@ header {
     height: 0;
     -ms-flex: 1;
         flex: 1;
-    background: rgba(0, 0, 0, 0.4);
+    background: rgba(0, 0, 0, 0.3);
     margin: 0 10px;
     transition: .2s;
     overflow: hidden;
@@ -230,17 +230,21 @@ header {
 .rea {
   width: 100vw; }
   .rea.color1 .overview {
-    background: #c2b0c9; }
+    background: #b6ffea; }
   .rea.color1 .moreContainer a {
-    background: #c2b0c9; }
+    background: #b6ffea; }
   .rea.color2 .overview {
-    background: #758184; }
+    background: #fce2ae; }
   .rea.color2 .moreContainer a {
-    background: #758184; }
+    background: #fce2ae; }
   .rea.color3 .overview {
-    background: #ff896b; }
+    background: #ffb3b3; }
   .rea.color3 .moreContainer a {
-    background: #ff896b; }
+    background: #ffb3b3; }
+  .rea.color4 .overview {
+    background: #ffdcf7; }
+  .rea.color4 .moreContainer a {
+    background: #ffdcf7; }
   .rea .overview {
     display: -ms-flexbox;
     display: flex;
