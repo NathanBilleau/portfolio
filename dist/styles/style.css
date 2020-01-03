@@ -215,11 +215,11 @@ header {
     font-family: 'Bebas Neue';
     text-decoration: none;
     padding: 3px 0 0;
-    color: rgba(0, 0, 0, 0); }
+    color: rgba(255, 255, 255, 0); }
     .reaNav a:hover {
       background: rgba(0, 0, 0, 0.6);
       height: 1em;
-      color: #fff; }
+      color: white; }
 
 .reaContainer {
   width: 300vw;
@@ -228,13 +228,11 @@ header {
   position: relative; }
 
 .rea {
-  width: 100vw;
-  scroll-snap-align: start;
-  scroll-snap-stop: normal; }
+  width: 100vw; }
   .rea.color1 .overview {
-    background: #FCE2AE; }
+    background: #c2b0c9; }
   .rea.color1 .moreContainer a {
-    background: #FCE2AE; }
+    background: #c2b0c9; }
   .rea.color2 .overview {
     background: #758184; }
   .rea.color2 .moreContainer a {
@@ -243,10 +241,6 @@ header {
     background: #ff896b; }
   .rea.color3 .moreContainer a {
     background: #ff896b; }
-  .rea.color4 .overview {
-    background: #ffd369; }
-  .rea.color4 .moreContainer a {
-    background: #ffd369; }
   .rea .overview {
     display: -ms-flexbox;
     display: flex;

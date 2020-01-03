@@ -241,12 +241,12 @@ header {
     font-family: 'Bebas Neue';
     text-decoration: none;
     padding: 3px 0 0;
-    color: rgba(0, 0, 0, 0);
+    color: rgba(255, 255, 255, 0);
 
     &:hover {
       background: rgba(0, 0, 0, .6);
       height: 1em;
-      color: #fff;
+      color: rgba(255, 255, 255, 1);
     }
   }
 
@@ -260,17 +260,15 @@ header {
 
 .rea {
   width: 100vw;
-  scroll-snap-align: start;
-  scroll-snap-stop: normal;
 
   &.color1 {
     .overview {
-      background: #FCE2AE;
+      background: #c2b0c9;
     }
 
     .moreContainer {
       a {
-        background: #FCE2AE;
+        background: #c2b0c9;
       }
     }
   }
@@ -301,18 +299,6 @@ header {
     }
   }
 
-
-  &.color4 {
-    .overview {
-      background: #ffd369;
-    }
-
-    .moreContainer {
-      a {
-        background: #ffd369;
-      }
-    }
-  }
 
 
 
