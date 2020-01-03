@@ -47,6 +47,10 @@ section {
       &.skills {
         background-image: url('/images/skills.jpg');
       }
+
+      &.contact {
+        background-image: url('/images/post.jpg');
+      }
     }
 
     .infos {
@@ -104,6 +108,7 @@ header {
   a {
     text-decoration: none;
   }
+
   span {
     font-family: 'Bebas Neue';
     color: #fff;

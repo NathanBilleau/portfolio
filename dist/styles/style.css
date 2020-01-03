@@ -42,6 +42,8 @@ section.half {
       background-image: url("/images/face.jpg"); }
     section.half .imgBg.skills {
       background-image: url("/images/skills.jpg"); }
+    section.half .imgBg.contact {
+      background-image: url("/images/post.jpg"); }
   section.half .infos {
     -ms-flex: 1;
         flex: 1;
