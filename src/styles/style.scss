@@ -1,6 +1,9 @@
+body {
+  width: 100vw;
+  overflow-x: hidden;
+}
+
 section {
-
-
 
   &.black {
     height: 0;
@@ -84,7 +87,7 @@ h1 {
 
 
 header {
-  position: absolute;
+  position: fixed;
   width: calc(100vw - 20vw * 2);
   height: 10vh;
   padding: 0 20vw;
@@ -211,8 +214,35 @@ header {
   }
 }
 
+.reaNav {
+  position: fixed;
+  width: calc(100vw - 25vw * 2);
+  height: 10vh;
+  padding: 0 25vw;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  z-index: 999;
+
+  a {
+    display: block;
+    height: 2px;
+    width: 100px;
+    background: rgba(0, 0, 0, .5);
+    margin: 0 10px;
+  }
+
+}
+
+.reaContainer {
+  width: 200vw;
+  display: inline-flex;
+  position: relative;
+}
 
 .rea {
+  width: 100vw;
 
   &.color1 {
     .overview {
@@ -227,12 +257,38 @@ header {
   }
 
 
+  &.color2 {
+    .overview {
+      background: #758184;
+    }
+
+    .moreContainer {
+      a {
+        background: #758184;
+      }
+    }
+  }
+
+
+  &.color3 {
+    .overview {
+      background: #ff896b;
+    }
+
+    .moreContainer {
+      a {
+        background: #ff896b;
+      }
+    }
+  }
+
+
 
   .overview {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100%;
+    height: 100vh;
     position: relative;
 
     img:hover {
