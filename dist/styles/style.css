@@ -88,7 +88,7 @@ header {
       justify-content: flex-start;
   -ms-flex-align: center;
       align-items: center;
-  z-index: 999; }
+  z-index: 99; }
   header a {
     text-decoration: none; }
   header span {
@@ -108,7 +108,8 @@ header {
     -ms-flex-direction: column;
         flex-direction: column;
     -ms-flex-pack: distribute;
-        justify-content: space-around; }
+        justify-content: space-around;
+    z-index: 999; }
     header nav a {
       color: #000;
       transition: 0.5s;
@@ -230,9 +231,9 @@ header {
 .rea {
   width: 100vw; }
   .rea.color1 .overview {
-    background: #b6ffea; }
+    background: #adffe7; }
   .rea.color1 .moreContainer a {
-    background: #b6ffea; }
+    background: #adffe7; }
   .rea.color2 .overview {
     background: #fce2ae; }
   .rea.color2 .moreContainer a {

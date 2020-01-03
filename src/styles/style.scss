@@ -99,7 +99,7 @@ header {
   flex-direction: row;
   justify-content: flex-start;
   align-items: center;
-  z-index: 999;
+  z-index: 99;
 
   a {
     text-decoration: none;
@@ -122,6 +122,7 @@ header {
     left: 0;
     flex-direction: column;
     justify-content: space-around;
+    z-index: 999;
 
     a {
       color: #000;
@@ -263,12 +264,12 @@ header {
 
   &.color1 {
     .overview {
-      background: #b6ffea;
+      background: #adffe7;
     }
 
     .moreContainer {
       a {
-        background: #b6ffea;
+        background: #adffe7;
       }
     }
   }
