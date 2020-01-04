@@ -39,11 +39,11 @@ section.half {
         flex: 1;
     position: relative; }
     section.half .imgBg.face {
-      background-image: url("/images/face.jpg"); }
+      background-image: url("/images/face.webp"); }
     section.half .imgBg.skills {
-      background-image: url("/images/skills.jpg"); }
+      background-image: url("/images/skills.webp"); }
     section.half .imgBg.contact {
-      background-image: url("/images/post.jpg"); }
+      background-image: url("/images/post.webp"); }
   section.half .infos {
     -ms-flex: 1;
         flex: 1;

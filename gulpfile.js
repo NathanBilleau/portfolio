@@ -10,6 +10,9 @@ var pug = require('gulp-pug');
 var sass = require('gulp-sass');
 var browserSync = require('browser-sync');
 
+const webp = require('imagemin-webp');
+const extReplace = require('gulp-ext-replace');
+
 gulp.task('browser-sync', function() {
   browserSync({
     server: {
@@ -23,9 +26,12 @@ gulp.task('bs-reload', function () {
 });
 
 gulp.task('images', function(){
-  gulp.src('src/images/**/*')
-    .pipe(cache(imagemin({ optimizationLevel: 3, progressive: true, interlaced: true })))
-    .pipe(gulp.dest('dist/images/'));
+  gulp.src('src/images/*')
+    .pipe(imagemin([
+      webp({quality: 50})
+    ]))
+    .pipe(extReplace('.webp'))
+    .pipe(gulp.dest('dist/images/'))
 });
 
 gulp.task('styles', function(){
@@ -50,7 +56,7 @@ gulp.task('views', function buildHTML() {
   .pipe(gulp.dest('dist/'))
 });
 
-gulp.task('default', ['browser-sync'], function(){
+gulp.task('default', ['images', 'browser-sync'], function(){
   gulp.watch("views/*.pug", ['views']);
   gulp.watch("src/styles/**/*.scss", ['styles']);
   gulp.watch("src/scripts/**/*.js", ['scripts']);
