@@ -260,7 +260,7 @@ header {
         justify-content: center;
     -ms-flex-align: center;
         align-items: center;
-    height: 95vh;
+    height: 90vh;
     position: relative; }
     .rea .overview img:hover {
       transform: translate(-10px, -20px) scale(0.95);
