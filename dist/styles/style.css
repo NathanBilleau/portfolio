@@ -207,7 +207,7 @@ header {
   z-index: 9999; }
   .reaNav a {
     display: block;
-    height: 0;
+    height: 3px;
     -ms-flex: 1;
         flex: 1;
     background: rgba(0, 0, 0, 0.3);
