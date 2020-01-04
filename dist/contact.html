@@ -23,7 +23,8 @@
         <div class="maskedText">Me contacter</div>
       </div>
       <div class="infos">
-        <form>
+        <form name="contactForm" method="POST" data-netlify="true">
+          <input input type="hidden" name="form-name" value="contactForm">
           <input name="name" type="text" aria-label="Nom" placeholder="Nom">
           <input name="subject" type="text" aria-label="Object" placeholder="Objet">
           <textarea name="message" aria-label="Message" placeholder="Message"></textarea>
