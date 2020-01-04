@@ -1,7 +1,6 @@
 @charset "UTF-8";
 body {
-  width: 100vw;
-  scroll-behavior: smooth; }
+  width: 100vw; }
 
 html {
   scroll-behavior: smooth;
