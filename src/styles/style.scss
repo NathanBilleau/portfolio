@@ -1,9 +1,13 @@
 body {
   width: 100vw;
+  scroll-behavior: smooth;
+
 }
 
 html {
   scroll-behavior: smooth;
+  -webkit-scroll-snap-type: y mandatory;
+  scroll-snap-type: y mandatory;
 }
 
 section {
@@ -11,6 +15,7 @@ section {
   width: calc(100vw - 20vw * 2);
   min-height: calc(100vh - 15vh * 2);
   padding: 15vh 20vw;
+  scroll-snap-align: start;
 
   &.black {
     background-color: rgba(0, 0, 0, .9);
@@ -107,8 +112,9 @@ header {
   span {
     font-family: 'Bebas Neue';
     color: #fff;
-    font-size: 1.3em;
+    font-size: 1.5em;
     cursor: pointer;
+    text-shadow: 0 0 2px #333;
   }
 
   nav {
@@ -270,7 +276,6 @@ header {
 
 .rea {
   width: 100vw;
-  scroll-snap-align: start;
   height: inherit;
   width: inherit;
   min-height: calc(100vh - 15vh * 2);
