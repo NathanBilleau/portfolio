@@ -233,9 +233,9 @@ header {
 .rea {
   width: 100vw; }
   .rea.color1 .overview {
-    background: #adffe7; }
+    background: #7fa998; }
   .rea.color1 .moreContainer a {
-    background: #adffe7; }
+    background: #7fa998; }
   .rea.color2 .overview {
     background: #fce2ae; }
   .rea.color2 .moreContainer a {
@@ -245,9 +245,9 @@ header {
   .rea.color3 .moreContainer a {
     background: #ffb3b3; }
   .rea.color4 .overview {
-    background: #ffdcf7; }
+    background: #c9b6e4; }
   .rea.color4 .moreContainer a {
-    background: #ffdcf7; }
+    background: #c9b6e4; }
   .rea .overview {
     display: -ms-flexbox;
     display: flex;
