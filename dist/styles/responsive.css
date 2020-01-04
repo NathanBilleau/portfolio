@@ -65,40 +65,27 @@ header {
     font-size: .7em; }
 
 .reaNav {
-  position: fixed;
   width: calc(100vw - 30vw * 2);
-  height: 10vh;
   margin: 0 30vw;
-  -ms-flex-direction: row;
-      flex-direction: row;
-  -ms-flex-pack: center;
-      justify-content: center;
-  -ms-flex-align: center;
-      align-items: center; }
+  display: -ms-inline-flexbox;
+  display: inline-flex; }
   .reaNav a {
-    height: 3px;
-    -ms-flex: 1;
-        flex: 1;
-    margin: 0 10px;
-    transition: .2s;
-    overflow: hidden;
-    padding: 3px 0 0; }
+    height: 20px;
+    width: 20px;
+    border-radius: 20px;
+    margin: none;
+    padding: 0; }
     .reaNav a:hover {
-      height: 1em; }
+      color: rgba(0, 0, 0, 0); }
 
-.reaContainer {
-  width: 100vw;
-  position: absolute;
-  left: 0;
-  overflow-x: auto; }
-
-.rea .overview img {
-  width: 70vw;
-  height: auto; }
-
-.rea .overview h1 {
-  bottom: 27vh;
-  width: auto; }
+.rea .overview {
+  height: 85vh; }
+  .rea .overview img {
+    width: 70vw;
+    height: auto; }
+  .rea .overview h1 {
+    bottom: 27vh;
+    width: auto; }
 
 .rea .moreContainer {
   width: calc(100vw - 15vw * 2);

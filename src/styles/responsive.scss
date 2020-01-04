@@ -86,39 +86,29 @@ header {
 }
 
 .reaNav {
-  position: fixed;
   width: calc(100vw - 30vw * 2);
-  height: 10vh;
   margin: 0 30vw;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
+  display: inline-flex;
 
   a {
-    height: 3px;
-    flex:1;
-    margin: 0 10px;
-    transition: .2s;
-    overflow: hidden;
-    padding: 3px 0 0;
+    height: 20px;
+    width: 20px;
+    border-radius: 20px;
+    margin: none;
+    padding: 0;
 
     &:hover {
-      height: 1em;
+      color: rgba(0, 0, 0, 0);
     }
   }
 
 }
 
-.reaContainer {
-  width: 100vw;
-  position: absolute;
-  left: 0;
-  overflow-x: auto;
-}
 
 .rea {
 
   .overview {
+    height: 85vh;
 
     img {
       width: 70vw;

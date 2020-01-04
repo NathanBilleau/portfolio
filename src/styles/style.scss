@@ -347,12 +347,6 @@ header {
       }
     }
 
-    img:active {
-      transform: scale(1.2);
-      z-index: 999999;
-      opacity: 1;
-    }
-
     img {
       height: 50vh;
       cursor: pointer;

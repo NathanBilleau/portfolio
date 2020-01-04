@@ -273,10 +273,6 @@ header {
       box-shadow: 0 28.5px 95px rgba(0, 0, 0, 0.95); }
     .rea .overview img:hover + h1 {
       transform: translate(10px, 20px) scale(1.1); }
-    .rea .overview img:active {
-      transform: scale(1.2);
-      z-index: 999999;
-      opacity: 1; }
     .rea .overview img {
       height: 50vh;
       cursor: pointer;
