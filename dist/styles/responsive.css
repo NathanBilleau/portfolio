@@ -1,0 +1,120 @@
+section {
+  width: calc(100vw - 15vw * 2);
+  min-height: calc(100vh - 10vh * 2);
+  padding: 10vh 15vw; }
+  section.half {
+    -ms-flex-direction: column;
+        flex-direction: column; }
+    section.half .imgBg {
+      margin-right: 0;
+      -ms-flex: 2;
+          flex: 2; }
+    section.half .infos {
+      margin-left: 0;
+      -ms-flex: 3;
+          flex: 3; }
+      section.half .infos h1 {
+        font-size: 4em; }
+      section.half .infos p {
+        font-size: 1em; }
+      section.half .infos ul.social {
+        width: 30%;
+        font-size: 1.2em; }
+
+header {
+  width: calc(100vw - 15vw * 2);
+  padding: 0 15vw; }
+  header span {
+    font-size: 1.5em; }
+  header nav {
+    height: calc(100vh - 30vh * 2);
+    padding: 30vh 20vw; }
+    header nav a h1 {
+      padding: 4vw;
+      font-size: 3em; }
+
+.maskedText {
+  font-size: 3em; }
+
+.skill {
+  font-size: 2.3em !important; }
+  .skill.percent1:before {
+    width: 10%; }
+  .skill.percent2:before {
+    width: 20%; }
+  .skill.percent3:before {
+    width: 30%; }
+  .skill.percent4:before {
+    width: 40%; }
+  .skill.percent5:before {
+    width: 50%; }
+  .skill.percent6:before {
+    width: 60%; }
+  .skill.percent7:before {
+    width: 70%; }
+  .skill.percent8:before {
+    width: 80%; }
+  .skill.percent9:before {
+    width: 90%; }
+  .skill.percent10:before {
+    width: 100%; }
+
+.portraitCh div {
+  font-size: 2em; }
+  .portraitCh div h1:before {
+    font-size: .7em; }
+
+.reaNav {
+  position: fixed;
+  width: calc(100vw - 30vw * 2);
+  height: 10vh;
+  margin: 0 30vw;
+  -ms-flex-direction: row;
+      flex-direction: row;
+  -ms-flex-pack: center;
+      justify-content: center;
+  -ms-flex-align: center;
+      align-items: center; }
+  .reaNav a {
+    height: 3px;
+    -ms-flex: 1;
+        flex: 1;
+    margin: 0 10px;
+    transition: .2s;
+    overflow: hidden;
+    padding: 3px 0 0; }
+    .reaNav a:hover {
+      height: 1em; }
+
+.reaContainer {
+  width: 100vw;
+  position: absolute;
+  left: 0;
+  overflow-x: auto; }
+
+.rea .overview img {
+  width: 70vw;
+  height: auto; }
+
+.rea .overview h1 {
+  bottom: 27vh;
+  width: auto; }
+
+.rea .moreContainer {
+  width: calc(100vw - 15vw * 2);
+  padding: 15vh 15vw; }
+  .rea .moreContainer .more {
+    display: block; }
+    .rea .moreContainer .more div,
+    .rea .moreContainer .more p {
+      font-size: 1em; }
+    .rea .moreContainer .more p {
+      margin-top: 3vh; }
+  .rea .moreContainer a {
+    padding: 7vh 0;
+    font-size: 3em; }
+
+form {
+  margin: 20px 0; }
+  form input {
+    font-size: 2em; }

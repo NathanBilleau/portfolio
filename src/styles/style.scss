@@ -7,20 +7,16 @@ html {
 }
 
 section {
+  height: 0;
+  width: calc(100vw - 20vw * 2);
+  min-height: calc(100vh - 15vh * 2);
+  padding: 15vh 20vw;
 
   &.black {
-    height: 0;
-    width: calc(100vw - 20vw * 2);
-    min-height: calc(100vh - 15vh * 2);
-    padding: 15vh 20vw;
     background-color: rgba(0, 0, 0, .9);
   }
 
   &.white {
-    height: 0;
-    width: calc(100vw - 20vw * 2);
-    min-height: calc(100vh - 15vh * 2);
-    padding: 15vh 20vw;
     background-color: rgba(255, 255, 255, 1);
   }
 
@@ -199,6 +195,10 @@ header {
 
 
 .portraitCh {
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+
   div {
     text-align: center;
     font-size: 4em;
@@ -258,7 +258,7 @@ header {
 }
 
 .reaContainer {
-  width: 100vw;
+  width: 100%;
   display: inline-flex;
   position: absolute;
   left: 0;
@@ -271,6 +271,10 @@ header {
 .rea {
   width: 100vw;
   scroll-snap-align: start;
+  height: inherit;
+  width: inherit;
+  min-height: calc(100vh - 15vh * 2);
+  padding: inherit;
 
   &.color1 {
     .overview {

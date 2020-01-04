@@ -1,0 +1,166 @@
+
+section {
+  width: calc(100vw - 15vw * 2);
+  min-height: calc(100vh - 10vh * 2);
+  padding: 10vh 15vw;
+
+  &.half {
+    flex-direction: column;
+
+    .imgBg {
+      margin-right: 0;
+      flex: 2;
+    }
+
+    .infos {
+      margin-left: 0;
+      flex: 3;
+
+      h1 {
+        font-size: 4em;
+      }
+
+      p {
+        font-size: 1em;
+      }
+
+      ul.social {
+        width: 30%;
+        font-size: 1.2em;
+      }
+    }
+  }
+}
+
+
+header {
+  width: calc(100vw - 15vw * 2);
+  padding: 0 15vw;
+
+  span {
+    font-size: 1.5em;
+  }
+
+  nav {
+    height: calc(100vh - 30vh * 2);
+    padding: 30vh 20vw;
+
+    a {
+
+      h1 {
+        padding: 4vw;
+        font-size: 3em;
+      }
+
+    }
+  }
+}
+
+.maskedText {
+  font-size: 3em;
+}
+
+
+.skill {
+  font-size: 2.3em!important;
+
+  @for $i from 1 through 10 {
+      $width: percentage(0.1 * $i);
+
+      &.percent#{$i}:before {
+        width: $width;
+      }
+  }
+
+}
+
+
+.portraitCh {
+  div {
+    font-size: 2em;
+
+    h1:before {
+      font-size: .7em;
+    }
+  }
+}
+
+.reaNav {
+  position: fixed;
+  width: calc(100vw - 30vw * 2);
+  height: 10vh;
+  margin: 0 30vw;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+
+  a {
+    height: 3px;
+    flex:1;
+    margin: 0 10px;
+    transition: .2s;
+    overflow: hidden;
+    padding: 3px 0 0;
+
+    &:hover {
+      height: 1em;
+    }
+  }
+
+}
+
+.reaContainer {
+  width: 100vw;
+  position: absolute;
+  left: 0;
+  overflow-x: auto;
+}
+
+.rea {
+
+  .overview {
+
+    img {
+      width: 70vw;
+      height: auto;
+    }
+
+    h1 {
+      bottom: 27vh;
+      width: auto;
+    }
+  }
+
+  .moreContainer {
+    width: calc(100vw - 15vw * 2);
+    padding: 15vh 15vw;
+
+    .more {
+      display: block;
+
+      div,
+      p {
+        font-size: 1em;
+      }
+
+      p {
+        margin-top: 3vh;
+      }
+    }
+
+    a {
+      padding: 7vh 0;
+      font-size: 3em;
+    }
+  }
+}
+
+
+form {
+  margin: 20px 0;
+
+  input {
+    font-size: 2em;
+  }
+
+}

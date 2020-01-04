@@ -5,73 +5,68 @@ body {
 html {
   scroll-behavior: smooth; }
 
-section.black {
+section {
   height: 0;
   width: calc(100vw - 20vw * 2);
   min-height: calc(100vh - 15vh * 2);
-  padding: 15vh 20vw;
-  background-color: rgba(0, 0, 0, 0.9); }
-
-section.white {
-  height: 0;
-  width: calc(100vw - 20vw * 2);
-  min-height: calc(100vh - 15vh * 2);
-  padding: 15vh 20vw;
-  background-color: white; }
-
-section.half {
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-direction: row;
-      flex-direction: row;
-  -ms-flex-align: stretch;
-      align-items: stretch;
-  -ms-flex-pack: justify;
-      justify-content: space-between; }
-  section.half .imgBg {
-    margin-right: 30px;
-    height: 100%;
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    -ms-flex: 1;
-        flex: 1;
-    position: relative; }
-    section.half .imgBg.face {
-      background-image: url("/images/face.webp"); }
-    section.half .imgBg.skills {
-      background-image: url("/images/skills.webp"); }
-    section.half .imgBg.contact {
-      background-image: url("/images/post.webp"); }
-  section.half .infos {
-    -ms-flex: 1;
-        flex: 1;
-    margin-left: 30px;
+  padding: 15vh 20vw; }
+  section.black {
+    background-color: rgba(0, 0, 0, 0.9); }
+  section.white {
+    background-color: white; }
+  section.half {
     display: -ms-flexbox;
     display: flex;
-    -ms-flex-direction: column;
-        flex-direction: column;
-    -ms-flex-pack: distribute;
-        justify-content: space-around; }
-    section.half .infos h1 {
-      color: #fff;
-      font-size: 8em; }
-    section.half .infos p {
-      color: rgba(255, 255, 255, 0.7);
-      font-family: 'Lora';
-      line-height: 1.2em; }
-    section.half .infos ul.social {
+    -ms-flex-direction: row;
+        flex-direction: row;
+    -ms-flex-align: stretch;
+        align-items: stretch;
+    -ms-flex-pack: justify;
+        justify-content: space-between; }
+    section.half .imgBg {
+      margin-right: 30px;
+      height: 100%;
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      -ms-flex: 1;
+          flex: 1;
+      position: relative; }
+      section.half .imgBg.face {
+        background-image: url("/images/face.webp"); }
+      section.half .imgBg.skills {
+        background-image: url("/images/skills.webp"); }
+      section.half .imgBg.contact {
+        background-image: url("/images/post.webp"); }
+    section.half .infos {
+      -ms-flex: 1;
+          flex: 1;
+      margin-left: 30px;
       display: -ms-flexbox;
       display: flex;
-      width: 20%;
-      -ms-flex-direction: row;
-          flex-direction: row;
-      -ms-flex-align: start;
-          align-items: flex-start;
-      -ms-flex-pack: justify;
-          justify-content: space-between; }
-      section.half .infos ul.social li a {
-        color: #fff; }
+      -ms-flex-direction: column;
+          flex-direction: column;
+      -ms-flex-pack: distribute;
+          justify-content: space-around; }
+      section.half .infos h1 {
+        color: #fff;
+        font-size: 8em; }
+      section.half .infos p {
+        color: rgba(255, 255, 255, 0.7);
+        font-family: 'Lora';
+        line-height: 1.2em; }
+      section.half .infos ul.social {
+        display: -ms-flexbox;
+        display: flex;
+        width: 20%;
+        -ms-flex-direction: row;
+            flex-direction: row;
+        -ms-flex-align: start;
+            align-items: flex-start;
+        -ms-flex-pack: justify;
+            justify-content: space-between; }
+        section.half .infos ul.social li a {
+          color: #fff; }
 
 h1 {
   font-family: 'Bebas Neue'; }
@@ -176,19 +171,26 @@ header {
   .skill.percent10:hover:before {
     width: 100%; }
 
-.portraitCh div {
-  text-align: center;
-  font-size: 4em;
-  color: #fff; }
-  .portraitCh div h1 {
-    display: inline-block; }
-  .portraitCh div h1:before {
-    color: rgba(255, 255, 255, 0.3);
-    font-size: .4em; }
-  .portraitCh div h1:last-of-type:before {
-    content: ' je serais '; }
-  .portraitCh div h1:first-of-type:before {
-    content: ' si j\'étais '; }
+.portraitCh {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -ms-flex-direction: column;
+      flex-direction: column; }
+  .portraitCh div {
+    text-align: center;
+    font-size: 4em;
+    color: #fff; }
+    .portraitCh div h1 {
+      display: inline-block; }
+    .portraitCh div h1:before {
+      color: rgba(255, 255, 255, 0.3);
+      font-size: .4em; }
+    .portraitCh div h1:last-of-type:before {
+      content: ' je serais '; }
+    .portraitCh div h1:first-of-type:before {
+      content: ' si j\'étais '; }
 
 .reaNav {
   position: fixed;
@@ -224,7 +226,7 @@ header {
       color: white; }
 
 .reaContainer {
-  width: 100vw;
+  width: 100%;
   display: -ms-inline-flexbox;
   display: inline-flex;
   position: absolute;
@@ -236,7 +238,11 @@ header {
 
 .rea {
   width: 100vw;
-  scroll-snap-align: start; }
+  scroll-snap-align: start;
+  height: inherit;
+  width: inherit;
+  min-height: calc(100vh - 15vh * 2);
+  padding: inherit; }
   .rea.color1 .overview {
     background: #7fa998; }
   .rea.color1 .moreContainer a {
