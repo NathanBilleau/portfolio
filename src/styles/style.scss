@@ -429,3 +429,41 @@ header {
     }
   }
 }
+
+
+form {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+  margin-bottom: 20px;
+
+  input,
+  textarea {
+    background: none;
+    border: none;
+    color: rgba(255, 255, 255, .8);
+    width: 100%;
+  }
+
+  input {
+    font-family: 'Bebas Neue';
+    font-size: 3em;
+
+    &[type="submit"] {
+      cursor: pointer;
+      transition: .2s;
+
+      &:hover {
+        background: rgba(255, 255, 255, .8);
+        color: rgba(0, 0, 0, .8);
+      }
+    }
+  }
+
+  textarea {
+    font-family: 'Lora';
+    font-size: 1em;
+    height: 50%;
+  }
+}
