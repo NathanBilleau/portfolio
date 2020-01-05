@@ -18,11 +18,11 @@ html(lang="fr")
     
     section.black.half
       .imgBg.contact
-        .maskedText Me contacter
+        h1.maskedText Me contacter
       
       .infos
         form(name="contactForm" method="POST" data-netlify="true")
-          input(input type="hidden" name="form-name" value="contactForm")
+          input(type="hidden" name="form-name" value="contactForm")
           input(name="name" type="text" aria-label="Nom" placeholder="Nom")
           input(name="subject" type="text" aria-label="Object" placeholder="Objet")
           textarea(name="message" aria-label="Message" placeholder="Message")
