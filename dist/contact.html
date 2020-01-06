@@ -7,10 +7,10 @@
     <meta name="description" content="Nathan Billeau, étudiant en MMI à Laval.">
     <link href="https://fonts.googleapis.com/css?family=Bebas+Neue&amp;display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Lora&amp;display=swap" rel="stylesheet">
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
     <link href="styles/reset.css" rel="stylesheet">
     <link href="styles/style.css" rel="stylesheet">
     <link href="styles/responsive.css" rel="stylesheet" media="screen and (max-width: 700px)">
-    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
   </head>
   <body>
     <header><a href="#menu"><span>Menu</span></a>
@@ -24,12 +24,12 @@
         <h1 class="maskedText">Me contacter</h1>
       </div>
       <div class="infos">
-        <!-- les attributs en lien avec netlify sont utilisé par netlify lorsque le portfolio est en ligne (nathanbilleau-portfolio.netlify.com) pour que le formulaire fonctionne sans JS ni PHP -->
         <form name="contactForm" method="POST" data-netlify="true">
           <input type="hidden" name="form-name" value="contactForm">
-          <input name="name" type="text" aria-label="Nom" placeholder="Nom">
+          <input name="name" type="text" aria-label="Nom" placeholder="Nom" required>
+          <input name="mail" type="email" aria-label="Mail" placeholder="Mail" required>
           <input name="subject" type="text" aria-label="Object" placeholder="Objet">
-          <textarea name="message" aria-label="Message" placeholder="Message"></textarea>
+          <textarea name="message" aria-label="Message" placeholder="Message" required></textarea>
           <input type="submit" aria-label="Envoyer">
         </form>
         <ul class="social">
