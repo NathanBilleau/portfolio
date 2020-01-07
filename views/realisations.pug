@@ -17,17 +17,51 @@ html(lang="fr")
     include includes/header.pug
     
     .reaNav
-        a(href="#lemaquis" title="Le Maquis") Le Maquis
-        a(href="#igorkov" title="Igor Kov") Igor Kov
-        a(href="#camarade" title="Camarade") Camarade
-        a(href="#socialdocs" title="Socialdocs") Socialdocs
-        a(href="#lyssna" title="Lyssna") Lyssna
+      a(href="#lyssna" title="Lyssna") Lyssna
+      a(href="#facstore" title="Facstore") Facstore
+      a(href="#lemaquis" title="Le Maquis") Le Maquis
+      a(href="#igorkov" title="Igor Kov") Igor Kov
+      a(href="#camarade" title="Camarade") Camarade
+      a(href="#socialdocs" title="Socialdocs") Socialdocs
     
     
     .reaContainer
       
+      
+      section.rea.color1#lyssna
+        .overview
+          img(src="images/lyssna.webp" alt="lyssna")
+          h1.maskedText Lyssna
+        .moreContainer
+          .more
+    
+            div
+              h1 Lyssna
+              h2 juillet 2019
+              h3 nuxt, gotrue, listennotes API, figma...
+              
+            p Lyssna ("écouter" en suédois) était un projet personnel. J'aime beaucoup les podcasts et il y a toujours des choses à retenir ou à voir plus tard, sur Lyssna, on peut prendre des notes et les classer pendant que l'on écoute. Le projet est pour le moment en pause mais peut être qu'une version finale sortira un jour.
           
-      section.rea.color1#lemaquis
+          a(href="https://thirsty-gates-29bfee.netlify.com/" target="_blank" rel="noreferrer") visiter le site
+          
+      section.rea.color2#facstore
+        .overview
+          img(src="images/facstore.webp" alt="facstore")
+          h1.maskedText Facstore
+        .moreContainer
+          .more
+    
+            div
+              h1 Lyssna
+              h2 novembre 2019
+              h3 nuxt, figma...
+              
+            p Dans le cadre d'un projet scolaire en marketing nous avions un site web à réaliser. 
+          
+          a(href="https://facstore.netlify.com/" target="_blank" rel="noreferrer") visiter le site
+      
+          
+      section.rea.color3#lemaquis
         .overview
           img(src="images/lemaquis.webp" alt="le maquis")
           h1.maskedText Le maquis
@@ -44,7 +78,7 @@ html(lang="fr")
           a(href="https://lemaquis.netlify.com" target="_blank" rel="noreferrer") visiter le site
           
           
-      section.rea.color2#igorkov
+      section.rea.color4#igorkov
         .overview
           img(src="images/igorkov.webp" alt="igor kov")
           h1.maskedText Igor Kov
@@ -61,7 +95,7 @@ html(lang="fr")
           a(href="https://igorkov.netlify.com" target="_blank" rel="noreferrer") visiter le site
           
         
-      section.rea.color3#camarade
+      section.rea.color1#camarade
         .overview
           img(src="images/camarade.webp" alt="camarade")
           h1.maskedText Camarade
@@ -77,7 +111,7 @@ html(lang="fr")
           
           a(href="https://www.youtube.com/watch?v=s15IFhvUh34" target="_blank" rel="noreferrer") voir le clip
           
-      section.rea.color4#socialdocs
+      section.rea.color2#socialdocs
         .overview
           img(src="images/socialdocs.webp" alt="socialdocs")
           h1.maskedText Socialdocs
@@ -95,20 +129,6 @@ html(lang="fr")
           
           
           
-      section.rea.color1#lyssna
-        .overview
-          img(src="images/lyssna.webp" alt="lyssna")
-          h1.maskedText Lyssna
-        .moreContainer
-          .more
-    
-            div
-              h1 Lyssna
-              h2 juillet 2019
-              h3 nuxt, gotrue, listennotes API, figma...
-              
-            p Lyssna (écouter en suédois) était un projet personnel. J'aime beaucoup les podcasts et il y a toujours des choses à retenir ou à voir plus tard, sur Lyssna, on peut prendre des notes et les classer pendant que l'on écoute. Le projet est pour le moment en pause mais peut être qu'une version finale sortira un jour.
-          
-          a(href="https://thirsty-gates-29bfee.netlify.com/" target="_blank" rel="noreferrer") visiter le site
+      
           
         
