@@ -41,7 +41,9 @@ gulp.task('styles', function(){
         console.log(error.message);
         this.emit('end');
     }}))
-    .pipe(sass())
+    .pipe(sass({
+      outputStyle: 'compressed'
+    }))
     .pipe(autoprefixer('last 2 versions'))
     .pipe(gulp.dest('dist/styles/'))
     .pipe(browserSync.reload({stream:true}))
@@ -51,7 +53,7 @@ gulp.task('views', function buildHTML() {
   return gulp.src('views/*.pug')
   .pipe(pug({
     // Your options in here.
-    pretty: true
+    pretty: false
   }))
   .pipe(gulp.dest('dist/'))
 });
