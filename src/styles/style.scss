@@ -8,6 +8,53 @@ html {
   scroll-snap-type: y mandatory;
 }
 
+@keyframes neonGlitch {
+  0% {
+    color: #fff;
+    text-shadow: 0 0 8px rgba(255, 255, 255, .7);
+  }
+  75% {
+    color: #fff;
+    text-shadow: 0 0 8px rgba(255, 255, 255, .7);
+  }
+  76% {
+    color: transparent;
+    text-shadow: none;
+  }
+  77% {
+    color: #fff;
+    text-shadow: 0 5px 0 rgba(255, 255, 255, .7);
+  }
+  78% {
+    color: transparent;
+  }
+  79% {
+    color: #fff;
+    text-shadow: 0 5px 0 rgba(255, 255, 255, .7);
+  }
+  85% {
+    text-shadow: 0 0 8px rgba(255, 255, 255, .7);
+  }
+  97% {
+    text-shadow: 0 0 0 rgba(255, 255, 255, .7);
+  }
+  90% {
+    text-shadow: 0 0 8px rgba(255, 255, 255, .7);
+  }
+  94% {
+    text-shadow: 0 0 0 rgba(255, 255, 255, .7);
+  }
+  96% {
+    text-shadow: 0 0 8px rgba(255, 255, 255, .7);
+  }
+  98% {
+    text-shadow: 0 0 0 rgba(255, 255, 255, .7);
+  }
+  100% {
+    text-shadow: 0 0 8px rgba(255, 255, 255, .7);
+  }
+}
+
 section {
   height: 0;
   width: calc(100vw - 20vw * 2);
@@ -39,7 +86,7 @@ section {
       position: relative;
 
       &.face {
-        background-image: url('/images/face.webp');
+        background-image: url('/images/me.webp');
       }
 
       &.skills {
@@ -61,7 +108,9 @@ section {
       h1 {
         color: #fff;
         font-size: 8em;
-
+        transition: box-shadow .5s;
+        animation: neonGlitch 5s ease .5s infinite;
+        text-shadow: 0 0 8px rgba(255, 255, 255, .7);
       }
 
       p {
